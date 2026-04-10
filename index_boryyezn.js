@@ -414,3 +414,163 @@ ${j.length>1?`4. Add ${j.slice(1).join(", ")} and stir well`:"4. Stir well"}
 - Carbs: ~${20+Math.floor(Math.random()*30)}g
 - Fats: ~${8+Math.floor(Math.random()*15)}g`),O(!1)},2e3))};return S.jsx(Gl,{children:S.jsxs("div",{className:"max-w-lg mx-auto px-4 pt-12",children:[S.jsx("h1",{className:"text-2xl font-bold mb-6",children:"Recipes & Food"}),S.jsx("div",{className:`flex rounded-xl p-1 mb-6 ${P?"bg-white/10":"bg-gray-200"} overflow-x-auto scrollbar-hide`,children:[{key:"recipes",label:"Recipes",icon:Sb},{key:"drinks",label:"Drinks",icon:DM},{key:"cultural",label:"World",icon:$M},{key:"ai",label:"AI Chef",icon:UP}].map(j=>S.jsxs("button",{onClick:()=>{r(j.key),u(null),d(null),h(null)},className:`flex-1 py-2 rounded-lg text-xs font-semibold flex items-center justify-center gap-1 transition-all whitespace-nowrap px-2 ${n===j.key?"gradient-primary text-white shadow-lg":""}`,children:[S.jsx(j.icon,{size:13})," ",j.label]},j.key))}),n==="recipes"&&!s&&S.jsxs(ce.div,{initial:{opacity:0},animate:{opacity:1},children:[S.jsx("div",{className:"flex gap-2 overflow-x-auto scrollbar-hide pb-4",children:_.map(j=>S.jsx("button",{onClick:()=>o(j),className:`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${i===j?"gradient-primary text-white":P?"bg-white/10 text-white/70":"bg-gray-200 text-gray-600"}`,children:j.charAt(0).toUpperCase()+j.slice(1)},j))}),S.jsx("div",{className:"space-y-3",children:C.map((j,D)=>S.jsx(ce.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:D*.05},children:S.jsxs(Ie,{onClick:()=>u(j),className:"relative",children:[S.jsxs("div",{className:"flex items-center gap-3",children:[S.jsx("span",{className:"text-4xl",children:j.image}),S.jsxs("div",{className:"flex-1 min-w-0",children:[S.jsx("h3",{className:"font-semibold truncate",children:j.name}),S.jsxs("div",{className:"flex items-center gap-3 mt-1",children:[S.jsxs("span",{className:`text-xs ${P?"text-white/50":"text-gray-500"}`,children:[S.jsx(VP,{size:12,className:"inline mr-1"}),j.time]}),S.jsxs("span",{className:`text-xs ${P?"text-white/50":"text-gray-500"}`,children:[S.jsx(HP,{size:12,className:"inline mr-1"}),j.servings]}),S.jsxs("span",{className:"text-xs text-green-400 font-medium",children:[j.calories," cal"]})]})]}),S.jsx("button",{onClick:R=>{R.stopPropagation(),T(j.id)},className:"p-1",children:S.jsx(Vs,{size:18,className:k.includes(j.id)?"fill-red-400 text-red-400":P?"text-white/30":"text-gray-300"})})]}),S.jsx("div",{className:"flex gap-1.5 mt-2",children:j.tags.slice(0,3).map(R=>S.jsx("span",{className:`text-xs px-2 py-0.5 rounded-full ${P?"bg-green-500/20 text-green-400":"bg-green-100 text-green-700"}`,children:R},R))})]})},j.id))})]}),S.jsx(sr,{children:s&&S.jsxs(ce.div,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},exit:{opacity:0},children:[S.jsxs("button",{onClick:()=>u(null),className:`flex items-center gap-1 mb-4 text-sm ${P?"text-white/60":"text-gray-500"}`,children:[S.jsx(Uc,{size:16})," Back to recipes"]}),S.jsxs(Ie,{children:[S.jsxs("div",{className:"text-center mb-4",children:[S.jsx("span",{className:"text-6xl",children:s.image}),S.jsx("h2",{className:"text-xl font-bold mt-3",children:s.name}),S.jsxs("div",{className:"flex justify-center gap-4 mt-2",children:[S.jsxs("span",{className:`text-sm ${P?"text-white/60":"text-gray-500"}`,children:[S.jsx(VP,{size:14,className:"inline mr-1"}),s.time]}),S.jsxs("span",{className:`text-sm ${P?"text-white/60":"text-gray-500"}`,children:[S.jsx(HP,{size:14,className:"inline mr-1"}),s.servings," servings"]})]})]}),S.jsx("div",{className:"grid grid-cols-4 gap-2 mb-4",children:[{l:"Calories",v:s.calories,c:"text-green-400"},{l:"Protein",v:`${s.protein}g`,c:"text-blue-400"},{l:"Carbs",v:`${s.carbs}g`,c:"text-amber-400"},{l:"Fats",v:`${s.fats}g`,c:"text-pink-400"}].map(j=>S.jsxs("div",{className:`text-center p-2 rounded-xl ${P?"bg-white/5":"bg-white/50"}`,children:[S.jsx("p",{className:`text-lg font-bold ${j.c}`,children:j.v}),S.jsx("p",{className:`text-xs ${P?"text-white/50":"text-gray-500"}`,children:j.l})]},j.l))}),S.jsxs("div",{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Ingredients"}),S.jsx("div",{className:"space-y-1.5",children:s.ingredients.map((j,D)=>S.jsxs("div",{className:`flex items-center gap-2 px-3 py-2 rounded-lg ${P?"bg-white/5":"bg-white/50"}`,children:[S.jsx("div",{className:"w-2 h-2 rounded-full bg-green-400"}),S.jsx("span",{className:"text-sm",children:j})]},D))})]}),S.jsxs("div",{children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Steps"}),S.jsx("div",{className:"space-y-2",children:s.steps.map((j,D)=>S.jsxs("div",{className:`flex gap-3 px-3 py-2 rounded-lg ${P?"bg-white/5":"bg-white/50"}`,children:[S.jsx("span",{className:"w-6 h-6 rounded-full gradient-primary text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5",children:D+1}),S.jsx("span",{className:"text-sm",children:j})]},D))})]})]})]})}),n==="drinks"&&!c&&S.jsx(ce.div,{initial:{opacity:0},animate:{opacity:1},className:"space-y-3",children:YJ.map((j,D)=>S.jsx(ce.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:D*.05},children:S.jsx(Ie,{onClick:()=>d(j),children:S.jsxs("div",{className:"flex items-center gap-3",children:[S.jsx("div",{className:`w-14 h-14 rounded-2xl bg-gradient-to-br ${j.color} flex items-center justify-center text-2xl`,children:j.image}),S.jsxs("div",{className:"flex-1 min-w-0",children:[S.jsx("h3",{className:"font-semibold truncate",children:j.name}),S.jsxs("p",{className:"text-xs text-green-400 font-medium mt-0.5",children:[j.calories," cal"]}),S.jsx("div",{className:"flex gap-1.5 mt-1",children:j.benefits.slice(0,2).map(R=>S.jsx("span",{className:`text-xs px-2 py-0.5 rounded-full ${P?"bg-white/10 text-white/60":"bg-gray-200 text-gray-600"}`,children:R},R))})]})]})})},j.id))}),S.jsx(sr,{children:c&&S.jsxs(ce.div,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},exit:{opacity:0},children:[S.jsxs("button",{onClick:()=>d(null),className:`flex items-center gap-1 mb-4 text-sm ${P?"text-white/60":"text-gray-500"}`,children:[S.jsx(Uc,{size:16})," Back to drinks"]}),S.jsxs(Ie,{children:[S.jsxs("div",{className:"text-center mb-4",children:[S.jsx("div",{className:`w-20 h-20 rounded-3xl bg-gradient-to-br ${c.color} flex items-center justify-center text-4xl mx-auto`,children:c.image}),S.jsx("h2",{className:"text-xl font-bold mt-3",children:c.name}),S.jsxs("p",{className:"text-green-400 font-medium",children:[c.calories," calories"]})]}),S.jsxs("div",{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Benefits"}),S.jsx("div",{className:"flex flex-wrap gap-2",children:c.benefits.map(j=>S.jsx("span",{className:`text-sm px-3 py-1.5 rounded-full ${P?"bg-green-500/20 text-green-400":"bg-green-100 text-green-700"}`,children:j},j))})]}),S.jsxs("div",{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Ingredients"}),S.jsx("div",{className:"space-y-1.5",children:c.ingredients.map((j,D)=>S.jsxs("div",{className:`flex items-center gap-2 px-3 py-2 rounded-lg ${P?"bg-white/5":"bg-white/50"}`,children:[S.jsx("div",{className:"w-2 h-2 rounded-full bg-green-400"}),S.jsx("span",{className:"text-sm",children:j})]},D))})]}),S.jsxs("div",{children:[S.jsx("h3",{className:"font-semibold mb-2",children:"How to Make"}),S.jsx("div",{className:"space-y-2",children:c.steps.map((j,D)=>S.jsxs("div",{className:`flex gap-3 px-3 py-2 rounded-lg ${P?"bg-white/5":"bg-white/50"}`,children:[S.jsx("span",{className:"w-6 h-6 rounded-full gradient-primary text-white text-xs flex items-center justify-center font-bold flex-shrink-0",children:D+1}),S.jsx("span",{className:"text-sm",children:j})]},D))})]})]})]})}),n==="cultural"&&!p&&S.jsx(ce.div,{initial:{opacity:0},animate:{opacity:1},className:"space-y-3",children:QJ.map((j,D)=>S.jsx(ce.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:D*.08},children:S.jsxs(Ie,{onClick:()=>h(j),className:"relative overflow-hidden",children:[S.jsx("div",{className:`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${j.gradient} opacity-15 rounded-full -translate-y-8 translate-x-8`}),S.jsxs("div",{className:"flex items-center gap-4",children:[S.jsx("span",{className:"text-4xl",children:j.flag}),S.jsxs("div",{className:"flex-1",children:[S.jsx("h3",{className:"text-lg font-bold",children:j.name}),S.jsxs("p",{className:`text-xs mt-1 leading-relaxed ${P?"text-white/50":"text-gray-500"}`,children:[j.description.slice(0,80),"..."]})]})]}),S.jsx("div",{className:"flex gap-2 mt-3",children:j.foods.slice(0,3).map(R=>S.jsxs("span",{className:`text-xs px-2 py-1 rounded-full ${P?"bg-white/10":"bg-gray-200"}`,children:[R.icon," ",R.name]},R.id))})]})},j.id))}),S.jsx(sr,{children:p&&S.jsxs(ce.div,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},exit:{opacity:0},children:[S.jsxs("button",{onClick:()=>h(null),className:`flex items-center gap-1 mb-4 text-sm ${P?"text-white/60":"text-gray-500"}`,children:[S.jsx(Uc,{size:16})," Back to cuisines"]}),S.jsxs(Ie,{className:"mb-4 relative overflow-hidden",children:[S.jsx("div",{className:`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${p.gradient} opacity-15 rounded-full -translate-y-12 translate-x-12`}),S.jsxs("div",{className:"text-center",children:[S.jsx("span",{className:"text-6xl",children:p.flag}),S.jsxs("h2",{className:"text-2xl font-bold mt-2",children:[p.name," Cuisine"]}),S.jsx("p",{className:`text-sm mt-2 ${P?"text-white/60":"text-gray-500"}`,children:p.description})]})]}),S.jsxs(Ie,{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-3",children:"Popular Dishes"}),S.jsx("div",{className:"space-y-2",children:p.foods.map(j=>S.jsxs("div",{className:`p-3 rounded-xl ${P?"bg-white/5":"bg-white/50"}`,children:[S.jsxs("div",{className:"flex items-center gap-3",children:[S.jsx("span",{className:"text-3xl",children:j.icon}),S.jsxs("div",{className:"flex-1",children:[S.jsx("h4",{className:"font-semibold text-sm",children:j.name}),S.jsx("p",{className:`text-xs ${P?"text-white/50":"text-gray-500"}`,children:j.description})]}),S.jsxs("span",{className:"text-xs text-green-400 font-bold",children:[j.calories," cal"]})]}),S.jsxs("div",{className:"flex gap-3 mt-2 ml-12",children:[S.jsxs("span",{className:"text-xs text-blue-400",children:["P: ",j.protein,"g"]}),S.jsxs("span",{className:"text-xs text-amber-400",children:["C: ",j.carbs,"g"]}),S.jsxs("span",{className:"text-xs text-pink-400",children:["F: ",j.fats,"g"]})]})]},j.id))})]}),p.recipes.length>0&&S.jsxs(Ie,{children:[S.jsx("h3",{className:"font-semibold mb-3",children:"Quick Recipe"}),p.recipes.map(j=>S.jsxs("div",{children:[S.jsxs("div",{className:"flex items-center gap-2 mb-3",children:[S.jsx("span",{className:"text-2xl",children:j.icon}),S.jsxs("div",{children:[S.jsx("h4",{className:"font-semibold",children:j.name}),S.jsxs("span",{className:`text-xs ${P?"text-white/50":"text-gray-500"}`,children:[j.time," · ",j.calories," cal"]})]})]}),S.jsxs("div",{className:"mb-3",children:[S.jsx("p",{className:`text-xs font-medium mb-1 ${P?"text-white/60":"text-gray-600"}`,children:"Ingredients"}),S.jsx("div",{className:"flex flex-wrap gap-1",children:j.ingredients.map(D=>S.jsx("span",{className:`text-xs px-2 py-1 rounded-full ${P?"bg-white/10":"bg-gray-200"}`,children:D},D))})]}),S.jsxs("div",{children:[S.jsx("p",{className:`text-xs font-medium mb-1 ${P?"text-white/60":"text-gray-600"}`,children:"Steps"}),j.steps.map((D,R)=>S.jsxs("div",{className:"flex gap-2 mb-1",children:[S.jsxs("span",{className:"text-xs text-green-400 font-bold",children:[R+1,"."]}),S.jsx("span",{className:"text-xs",children:D})]},R))]})]},j.id))]})]})}),n==="ai"&&S.jsxs(ce.div,{initial:{opacity:0},animate:{opacity:1},children:[S.jsxs(Ie,{className:"mb-4",children:[S.jsxs("div",{className:"text-center mb-4",children:[S.jsx(ce.div,{className:"text-5xl mb-2",animate:{rotate:[0,5,-5,0]},transition:{duration:3,repeat:1/0},children:"🤖"}),S.jsx("h3",{className:"text-lg font-bold",children:"AI Recipe Generator"}),S.jsx("p",{className:`text-sm mt-1 ${P?"text-white/50":"text-gray-500"}`,children:"Enter ingredients and get a recipe!"})]}),S.jsx("textarea",{placeholder:"Enter ingredients separated by commas (e.g., chicken, rice, broccoli)",value:y,onChange:j=>g(j.target.value),rows:3,className:`w-full px-4 py-3 rounded-xl text-sm resize-none ${P?"bg-white/10 text-white placeholder-white/40":"bg-gray-100 text-gray-900 placeholder-gray-400"} focus:outline-none focus:ring-2 focus:ring-green-400/30`}),S.jsxs(ce.button,{whileHover:{scale:1.02},whileTap:{scale:.98},onClick:M,disabled:v||!y.trim(),className:"w-full mt-3 gradient-primary text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 disabled:opacity-50",children:[S.jsx(UP,{size:18})," ",v?"Generating...":"Generate Recipe"]})]}),S.jsx(sr,{children:b&&S.jsx(ce.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},exit:{opacity:0},children:S.jsxs(Ie,{className:"relative",children:[S.jsx("button",{onClick:()=>w(null),className:"absolute top-4 right-4 text-white/40 hover:text-white",children:S.jsx(Ns,{size:18})}),S.jsx("div",{className:"whitespace-pre-line text-sm leading-relaxed",children:b.split(`
 `).map((j,D)=>S.jsx("p",{className:j.startsWith("**")?"font-bold mt-3 first:mt-0":P?"text-white/80":"text-gray-700",children:j.replace(/\*\*/g,"")},D))})]})})})]})]})})}const Ej=[{id:"diabetes",name:"Diabetes Friendly",icon:"🩺",color:"from-blue-500 to-cyan-500",description:"Low glycemic index foods that help manage blood sugar levels effectively.",tips:["Choose whole grains over refined","Eat at regular intervals","Monitor carb intake per meal","Include fiber-rich foods"],foods:[{name:"Quinoa",icon:"🌾",benefit:"Low GI, high fiber"},{name:"Leafy Greens",icon:"🥬",benefit:"Low carb, nutrient dense"},{name:"Berries",icon:"🫐",benefit:"Low sugar fruit, antioxidants"},{name:"Nuts",icon:"🥜",benefit:"Healthy fats, slow energy"},{name:"Fish",icon:"🐟",benefit:"Omega-3, lean protein"}],avoid:["Sugary drinks","White bread","Candy","Fruit juice","Processed snacks"]},{id:"weightloss",name:"Weight Loss",icon:"⚖️",color:"from-green-500 to-emerald-500",description:"Calorie-controlled meals with high satiety to support healthy weight management.",tips:["Create a moderate calorie deficit","Eat more protein to stay full","Drink water before meals","Avoid late-night snacking"],foods:[{name:"Chicken Breast",icon:"🍗",benefit:"Lean protein, filling"},{name:"Broccoli",icon:"🥦",benefit:"Low calorie, high volume"},{name:"Greek Yogurt",icon:"🥛",benefit:"Protein-rich, satisfying"},{name:"Eggs",icon:"🥚",benefit:"Complete protein, versatile"},{name:"Sweet Potato",icon:"🍠",benefit:"Complex carbs, fiber"}],avoid:["Fried foods","Sugary cereals","Soda","Fast food","Alcohol"]},{id:"musclegain",name:"Muscle Gain",icon:"💪",color:"from-orange-500 to-red-500",description:"High protein, calorie-surplus meals designed to support muscle growth and recovery.",tips:["Eat 1.6-2.2g protein per kg body weight","Time carbs around workouts","Never skip post-workout nutrition","Get enough sleep for recovery"],foods:[{name:"Salmon",icon:"🐟",benefit:"Protein + omega-3"},{name:"Brown Rice",icon:"🍚",benefit:"Complex carbs for energy"},{name:"Lean Beef",icon:"🥩",benefit:"Iron + creatine + protein"},{name:"Banana",icon:"🍌",benefit:"Quick energy, potassium"},{name:"Cottage Cheese",icon:"🧀",benefit:"Casein protein, slow release"}],avoid:["Excessive alcohol","Empty calorie snacks","Skipping meals","Too much cardio"]},{id:"lowsodium",name:"Low Sodium",icon:"🧂",color:"from-purple-500 to-indigo-500",description:"Heart-healthy eating with reduced sodium to support blood pressure management.",tips:["Cook from scratch when possible","Use herbs and spices instead of salt","Read food labels carefully","Rinse canned foods"],foods:[{name:"Fresh Fruits",icon:"🍎",benefit:"Naturally low sodium"},{name:"Vegetables",icon:"🥕",benefit:"Potassium-rich, low sodium"},{name:"Herbs & Spices",icon:"🌿",benefit:"Flavor without sodium"},{name:"Fresh Meat",icon:"🥩",benefit:"Unprocessed, low sodium"},{name:"Whole Grains",icon:"🌾",benefit:"Minimal processing"}],avoid:["Canned soups","Deli meats","Soy sauce","Pickles","Processed cheese"]}],JJ=[{id:"s1",title:"Buy Local Produce",description:"Support local farmers and reduce transportation emissions.",icon:"🏪",impact:"Reduces carbon footprint by up to 5%"},{id:"s2",title:"Reduce Food Waste",description:"Plan meals ahead and use leftovers creatively.",icon:"♻️",impact:"Saves 1.3 billion tons of food annually"},{id:"s3",title:"Choose Seasonal Foods",description:"Seasonal produce is fresher and requires less energy to grow.",icon:"🌿",impact:"Uses 10x less energy than out-of-season"},{id:"s4",title:"Plant-Based Meals",description:"Even one meatless day per week makes a significant impact.",icon:"🌱",impact:"Reduces water usage by 50%"},{id:"s5",title:"Compost Scraps",description:"Turn food scraps into nutrient-rich soil for your garden.",icon:"🌍",impact:"Reduces methane emissions from landfills"},{id:"s6",title:"Bring Reusable Bags",description:"Reduce plastic waste by using reusable shopping bags.",icon:"👜",impact:"Saves 500 plastic bags per person per year"}];function eee(){const[e]=Hx(),t=e.get("tab")||"profile",[n,r]=N.useState(t),[i,o]=N.useState(null),{dark:s,toggle:u}=$r(),{user:c,logout:d,streak:p,favorites:h,meals:y,dietType:g,setDietType:b}=sa(),w=y.length,v=Ej.find(O=>O.id===i);return S.jsx(Gl,{children:S.jsxs("div",{className:"max-w-lg mx-auto px-4 pt-12",children:[S.jsx("div",{className:`flex rounded-xl p-1 mb-6 ${s?"bg-white/10":"bg-gray-200"}`,children:[{key:"profile",label:"Profile",icon:P0},{key:"health",label:"Health",icon:Vs},{key:"sustainability",label:"Eco",icon:LM}].map(O=>S.jsxs("button",{onClick:()=>{r(O.key),o(null)},className:`flex-1 py-2 rounded-lg text-sm font-semibold flex items-center justify-center gap-1.5 transition-all ${n===O.key?"gradient-primary text-white shadow-lg":""}`,children:[S.jsx(O.icon,{size:14})," ",O.label]},O.key))}),n==="profile"&&S.jsxs(ce.div,{initial:{opacity:0},animate:{opacity:1},children:[S.jsx(Ie,{className:"mb-4",children:S.jsxs("div",{className:"flex items-center gap-4",children:[S.jsx("div",{className:"w-16 h-16 rounded-2xl gradient-primary flex items-center justify-center",children:S.jsx(P0,{size:32,className:"text-white"})}),S.jsxs("div",{children:[S.jsx("h2",{className:"text-xl font-bold",children:(c==null?void 0:c.name)||"Guest"}),S.jsx("p",{className:`text-sm ${s?"text-white/50":"text-gray-500"}`,children:(c==null?void 0:c.email)||"Not signed in"})]})]})}),S.jsx("div",{className:"grid grid-cols-3 gap-3 mb-4",children:[{icon:M6,label:"Streak",value:`${p} days`,color:"from-orange-500 to-red-500"},{icon:T6,label:"Meals",value:`${w}`,color:"from-blue-500 to-cyan-500"},{icon:Vs,label:"Favorites",value:`${h.length}`,color:"from-pink-500 to-rose-500"}].map((O,P)=>S.jsx(ce.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:P*.1},children:S.jsxs(Ie,{className:"text-center",children:[S.jsx("div",{className:`w-10 h-10 rounded-xl bg-gradient-to-br ${O.color} flex items-center justify-center mx-auto mb-2`,children:S.jsx(O.icon,{size:18,className:"text-white"})}),S.jsx("p",{className:"font-bold",children:O.value}),S.jsx("p",{className:`text-xs ${s?"text-white/50":"text-gray-500"}`,children:O.label})]})},O.label))}),S.jsxs(Ie,{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-3",children:"Settings"}),S.jsxs("div",{className:"space-y-1",children:[S.jsxs("button",{onClick:u,className:`w-full flex items-center justify-between p-3 rounded-xl ${s?"hover:bg-white/5":"hover:bg-gray-100"} transition-colors`,children:[S.jsxs("div",{className:"flex items-center gap-3",children:[s?S.jsx(L6,{size:18,className:"text-blue-400"}):S.jsx(V6,{size:18,className:"text-amber-400"}),S.jsx("span",{className:"text-sm font-medium",children:"Dark Mode"})]}),S.jsx("div",{className:`w-11 h-6 rounded-full relative transition-colors ${s?"bg-green-500":"bg-gray-300"}`,children:S.jsx(ce.div,{className:"w-5 h-5 bg-white rounded-full absolute top-0.5 shadow",animate:{left:s?"22px":"2px"},transition:{type:"spring",stiffness:500,damping:30}})})]}),[{icon:q6,label:"Privacy",action:()=>{}},{icon:Vs,label:"Saved Favorites",action:()=>{}}].map(O=>S.jsxs("button",{onClick:O.action,className:`w-full flex items-center justify-between p-3 rounded-xl ${s?"hover:bg-white/5":"hover:bg-gray-100"} transition-colors`,children:[S.jsxs("div",{className:"flex items-center gap-3",children:[S.jsx(O.icon,{size:18,className:s?"text-white/60":"text-gray-500"}),S.jsx("span",{className:"text-sm font-medium",children:O.label})]}),S.jsx(qP,{size:16,className:s?"text-white/30":"text-gray-400"})]},O.label))]})]}),S.jsxs(ce.button,{whileHover:{scale:1.02},whileTap:{scale:.98},onClick:d,className:"w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-red-500/10 text-red-400 font-medium",children:[S.jsx(D6,{size:18})," Sign Out"]})]}),n==="health"&&!i&&S.jsxs(ce.div,{initial:{opacity:0},animate:{opacity:1},children:[S.jsxs(Ie,{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Current Diet"}),S.jsxs("p",{className:`text-sm ${s?"text-white/50":"text-gray-500"}`,children:["You're on the ",S.jsx("span",{className:"text-green-400 font-medium capitalize",children:g})," plan"]})]}),S.jsx("h3",{className:"font-semibold mb-3",children:"Diet Plans"}),S.jsx("div",{className:"space-y-3",children:Ej.map((O,P)=>S.jsx(ce.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:P*.08},children:S.jsxs(Ie,{onClick:()=>o(O.id),className:"relative overflow-hidden",children:[S.jsx("div",{className:`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${O.color} opacity-15 rounded-full -translate-y-6 translate-x-6`}),S.jsxs("div",{className:"flex items-center gap-3",children:[S.jsx("span",{className:"text-3xl",children:O.icon}),S.jsxs("div",{className:"flex-1",children:[S.jsx("h4",{className:"font-semibold",children:O.name}),S.jsxs("p",{className:`text-xs mt-0.5 ${s?"text-white/50":"text-gray-500"}`,children:[O.description.slice(0,60),"..."]})]}),S.jsx(qP,{size:16,className:s?"text-white/30":"text-gray-400"})]})]})},O.id))})]}),i&&v&&S.jsxs(ce.div,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},children:[S.jsxs("button",{onClick:()=>o(null),className:`flex items-center gap-1 mb-4 text-sm ${s?"text-white/60":"text-gray-500"}`,children:[S.jsx(Uc,{size:16})," Back to plans"]}),S.jsxs(Ie,{className:"mb-4 relative overflow-hidden",children:[S.jsx("div",{className:`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${v.color} opacity-15 rounded-full -translate-y-12 translate-x-12`}),S.jsxs("div",{className:"text-center",children:[S.jsx("span",{className:"text-5xl",children:v.icon}),S.jsx("h2",{className:"text-xl font-bold mt-2",children:v.name}),S.jsx("p",{className:`text-sm mt-2 ${s?"text-white/60":"text-gray-500"}`,children:v.description})]})]}),S.jsxs(Ie,{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Tips"}),S.jsx("div",{className:"space-y-2",children:v.tips.map((O,P)=>S.jsxs("div",{className:`flex items-start gap-2 p-2 rounded-lg ${s?"bg-white/5":"bg-white/50"}`,children:[S.jsx("span",{className:"text-green-400 mt-0.5",children:"💡"}),S.jsx("span",{className:"text-sm",children:O})]},P))})]}),S.jsxs(Ie,{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Recommended Foods"}),S.jsx("div",{className:"space-y-2",children:v.foods.map((O,P)=>S.jsxs("div",{className:`flex items-center gap-3 p-2 rounded-lg ${s?"bg-white/5":"bg-white/50"}`,children:[S.jsx("span",{className:"text-2xl",children:O.icon}),S.jsxs("div",{children:[S.jsx("p",{className:"font-medium text-sm",children:O.name}),S.jsx("p",{className:`text-xs ${s?"text-white/50":"text-gray-500"}`,children:O.benefit})]})]},P))})]}),S.jsxs(Ie,{className:"mb-4",children:[S.jsx("h3",{className:"font-semibold mb-2",children:"Foods to Avoid"}),S.jsx("div",{className:"space-y-1.5",children:v.avoid.map((O,P)=>S.jsxs("div",{className:"flex items-center gap-2 px-3 py-2 rounded-lg bg-red-500/10",children:[S.jsx(Ms,{size:14,className:"text-red-400"}),S.jsx("span",{className:"text-sm text-red-400",children:O})]},P))})]}),S.jsxs(ce.button,{whileHover:{scale:1.02},whileTap:{scale:.98},onClick:()=>{b(v.id),o(null)},className:"w-full gradient-primary text-white font-semibold py-3 rounded-xl mb-4",children:["Switch to ",v.name]})]}),n==="sustainability"&&S.jsxs(ce.div,{initial:{opacity:0},animate:{opacity:1},children:[S.jsx(Ie,{className:"mb-4",children:S.jsxs("div",{className:"text-center py-4",children:[S.jsx(ce.div,{className:"text-5xl mb-3",animate:{scale:[1,1.1,1]},transition:{duration:3,repeat:1/0},children:"🌍"}),S.jsx("h3",{className:"text-lg font-bold",children:"Your Sustainability Score"}),S.jsxs("div",{className:"flex items-center justify-center gap-2 mt-2",children:[S.jsx(ce.span,{className:"text-4xl font-bold text-green-400",initial:{opacity:0,scale:.5},animate:{opacity:1,scale:1},transition:{delay:.3},children:"72"}),S.jsx("span",{className:`text-sm ${s?"text-white/50":"text-gray-500"}`,children:"/ 100"})]}),S.jsx("div",{className:`h-2.5 rounded-full mt-3 mx-12 ${s?"bg-white/10":"bg-gray-200"}`,children:S.jsx(ce.div,{initial:{width:0},animate:{width:"72%"},transition:{duration:1},className:"h-full rounded-full bg-gradient-to-r from-green-400 to-emerald-500"})}),S.jsx("p",{className:`text-xs mt-2 ${s?"text-white/50":"text-gray-500"}`,children:"Good! You're above average"})]})}),S.jsx("h3",{className:"font-semibold mb-3",children:"Eco-Friendly Tips"}),S.jsx("div",{className:"space-y-3",children:JJ.map((O,P)=>S.jsx(ce.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:P*.08},children:S.jsx(Ie,{children:S.jsxs("div",{className:"flex items-start gap-3",children:[S.jsx("span",{className:"text-3xl",children:O.icon}),S.jsxs("div",{className:"flex-1",children:[S.jsx("h4",{className:"font-semibold text-sm",children:O.title}),S.jsx("p",{className:`text-xs mt-1 ${s?"text-white/50":"text-gray-500"}`,children:O.description}),S.jsx("div",{className:`mt-2 text-xs px-2.5 py-1 rounded-full inline-block ${s?"bg-green-500/20 text-green-400":"bg-green-100 text-green-700"}`,children:O.impact})]})]})})},O.id))}),S.jsxs(Ie,{className:"mt-4",children:[S.jsx("h3",{className:"font-semibold mb-3",children:"Eco-Friendly Food Swaps"}),S.jsx("div",{className:"space-y-2",children:[{from:"🥩 Beef",to:"🫘 Lentils",save:"Saves 6kg CO2"},{from:"🥛 Dairy Milk",to:"🌱 Oat Milk",save:"Saves 3x water"},{from:"🍚 White Rice",to:"🌾 Quinoa",save:"More sustainable"},{from:"🐟 Farmed Salmon",to:"🐟 Wild Sardines",save:"Lower impact"}].map((O,P)=>S.jsxs("div",{className:`flex items-center gap-2 p-2.5 rounded-xl ${s?"bg-white/5":"bg-white/50"}`,children:[S.jsx("span",{className:"text-sm",children:O.from}),S.jsx("span",{className:"text-green-400",children:"→"}),S.jsx("span",{className:"text-sm font-medium",children:O.to}),S.jsx("span",{className:`text-xs ml-auto ${s?"text-green-400/70":"text-green-600"}`,children:O.save})]},P))})]})]})]})})}function tee(){const{isLoggedIn:e}=sa();return e?S.jsxs("div",{className:"relative",children:[S.jsx(BM,{}),S.jsx(sr,{mode:"wait",children:S.jsxs(FL,{children:[S.jsx(Vi,{path:"/home",element:S.jsx(Z6,{})}),S.jsx(Vi,{path:"/scan",element:S.jsx(t8,{})}),S.jsx(Vi,{path:"/tracker",element:S.jsx(XJ,{})}),S.jsx(Vi,{path:"/recipes",element:S.jsx(ZJ,{})}),S.jsx(Vi,{path:"/profile",element:S.jsx(eee,{})}),S.jsx(Vi,{path:"*",element:S.jsx(LL,{to:"/home",replace:!0})})]})}),S.jsx(X6,{})]}):S.jsx(Q6,{})}function nee(){return S.jsx(f3,{children:S.jsx(x6,{children:S.jsx(S6,{children:S.jsx(tee,{})})})})}q$.createRoot(document.getElementById("root")).render(S.jsx(N.StrictMode,{children:S.jsx(nee,{})}));
+
+/* === FORCE OVERRIDE (SAFE FIX) === */
+
+// Food scanner replacement (NO Gemini)
+window.J6 = async function () {
+  try {
+    const foodName = prompt("Enter food name (pizza, banana, burger):");
+
+    if (!foodName) throw new Error("No input");
+
+    const res = await fetch(
+      `https://api.spoonacular.com/recipes/guessNutrition?title=${encodeURIComponent(foodName)}&apiKey=9ff4295f168b47c0bedb981dad6f66eb
+`
+    );
+
+    const data = await res.json();
+
+    return {
+      name: foodName,
+      calories: Math.round(data.calories?.value || 0),
+      protein: Math.round(data.protein?.value || 0),
+      carbs: Math.round(data.carbs?.value || 0),
+      fats: Math.round(data.fat?.value || 0),
+      ingredients: [],
+      healthScore: 70,
+      icon: "🍽️"
+    };
+
+  } catch {
+    return {
+      name: "Unknown Food",
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fats: 0,
+      ingredients: [],
+      healthScore: 0,
+      icon: "❓"
+    };
+  }
+};
+
+
+// Barcode scanner replacement (NO Gemini)
+window.e8 = async function (barcode) {
+  try {
+    const res = await fetch(
+      `https://world.openfoodfacts.org/api/v0/product/${encodeURIComponent(barcode)}.json`
+    );
+
+    const data = await res.json();
+
+    if (data.status === 1 && data.product) {
+      const p = data.product;
+
+      return {
+        product: p.product_name || "Unknown Product",
+        brand: p.brands || "Unknown",
+        calories: Math.round(Number(p.nutriments?.["energy-kcal_100g"] || 0)),
+        protein: Math.round(Number(p.nutriments?.proteins_100g || 0)),
+        carbs: Math.round(Number(p.nutriments?.carbohydrates_100g || 0)),
+        fats: Math.round(Number(p.nutriments?.fat_100g || 0)),
+        vitamins: [],
+        ingredients: (p.ingredients_text || "").split(",").slice(0, 6),
+        allergens: [],
+        warnings: [],
+        icon: "📦"
+      };
+    }
+
+    throw new Error("Not found");
+
+  } catch {
+    return {
+      product: "Unknown Product",
+      brand: "Unknown",
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fats: 0,
+      vitamins: [],
+      ingredients: [],
+      allergens: [],
+      warnings: [],
+      icon: "📦"
+    };
+  }
+};
+
+/* === END FIX === */
+
+/* === FINAL FOOD FIX (PROMPT + STRICT + NO GEMINI ERROR) === */
+(() => {
+  const originalFetch = window.fetch.bind(window);
+
+  function getFoodResult(input) {
+    const q = String(input || "").toLowerCase().trim();
+
+    const FOODS = {
+      bread: { name: "Bread", calories: 79, protein: 3, carbs: 15, fats: 1, ingredients: ["wheat flour"], healthScore: 60, icon: "🍞" },
+      banana: { name: "Banana", calories: 105, protein: 1, carbs: 27, fats: 0, ingredients: ["banana"], healthScore: 92, icon: "🍌" },
+      apple: { name: "Apple", calories: 95, protein: 0, carbs: 25, fats: 0, ingredients: ["apple"], healthScore: 94, icon: "🍎" },
+      pizza: { name: "Pizza", calories: 285, protein: 12, carbs: 36, fats: 10, ingredients: ["dough", "cheese"], healthScore: 42, icon: "🍕" },
+      burger: { name: "Burger", calories: 354, protein: 17, carbs: 29, fats: 17, ingredients: ["bun", "patty"], healthScore: 35, icon: "🍔" },
+      salad: { name: "Salad", calories: 180, protein: 5, carbs: 14, fats: 10, ingredients: ["greens"], healthScore: 90, icon: "🥗" },
+      sandwich: { name: "Sandwich", calories: 250, protein: 12, carbs: 30, fats: 8, ingredients: ["bread", "filling"], healthScore: 58, icon: "🥪" },
+      donut: { name: "Donut", calories: 260, protein: 4, carbs: 31, fats: 14, ingredients: ["flour", "sugar"], healthScore: 18, icon: "🍩" },
+      egg: { name: "Egg Dish", calories: 155, protein: 13, carbs: 1, fats: 11, ingredients: ["egg"], healthScore: 78, icon: "🥚" }
+    };
+
+    if (FOODS[q]) return FOODS[q];
+
+    return {
+      name: "Unknown Food",
+      calories: 0,
+      protein: 0,
+      carbs: 0,
+      fats: 0,
+      ingredients: [],
+      healthScore: 0,
+      icon: "❓"
+    };
+  }
+
+  window.fetch = async function(input, init) {
+    const url = typeof input === "string" ? input : input?.url || "";
+
+    // 🚫 BLOCK GEMINI completely
+    if (url.includes("generativelanguage.googleapis.com")) {
+
+      const answer = prompt(
+  "What food is in the picture? (e.g. bread, pizza, banana)"
+);
+
+      const result = getFoodResult(answer);
+
+      return new Response(
+        JSON.stringify({
+          candidates: [
+            {
+              content: {
+                parts: [
+                  {
+                    text: JSON.stringify(result)
+                  }
+                ]
+              }
+            }
+          ]
+        }),
+        {
+          status: 200,
+          headers: { "Content-Type": "application/json" }
+        }
+      );
+    }
+
+    return originalFetch(input, init);
+  };
+})();
